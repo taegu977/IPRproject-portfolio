@@ -1,0 +1,92 @@
+/* ----- 메인 컨테이너 ----- */
+.main-disp {
+  display: flex;
+  justify-content: center;
+}
+
+.main-con {
+  width: 80%;
+  max-width: 800px;
+}
+
+/* ----- 게시글 박스 스타일 ----- */
+.center-con {
+  background-color: #e6f0ff; /* 게시글 박스 배경색 적용 */
+  border-radius: 10px;
+  padding: 34px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #8F5C0E;
+}
+
+/* ----- 입력 필드 공통 스타일 ----- */
+.info-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.info-box label {
+  font-weight: bold;
+  color: #8F5C0E;
+  margin-bottom: 5px;
+}
+
+.info-box span {
+  padding: 10px;
+  background-color: white; /* 내부 컨텐츠는 흰색 배경 */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  display: block;
+}
+
+.info-box input[type="text"] {
+  padding: 10px;
+  background-color: white; /* 내부 컨텐츠는 흰색 배경 */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  display: block;
+}
+
+/* ----- 내용 입력 필드 (textarea) ----- */
+.content-box {
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: white; /* 내용 입력창도 흰색 */
+  resize: none;
+}
+
+/* ----- 버튼 스타일 ----- */
+.button {
+  background-color: #8F5C0E;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 12px 16px;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #6f4608;
+}
+
+/* ----- 반응형 디자인 ----- */
+@media (max-width: 768px) {
+  .main-con {
+    width: 95%;
+  }
+  
+  .button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
