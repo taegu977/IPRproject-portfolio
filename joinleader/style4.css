@@ -1,0 +1,172 @@
+/* 이미지 스타일 */
+img {
+  max-width: 100%;  /* 이미지의 최대 너비를 100%로 설정 */
+  height: auto;  /* 이미지 비율 유지 */
+}
+
+.c-content02 {
+  width: 100%;  /* c-content02 너비를 1280px로 설정 */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.login-box > ul{
+  display: flex;
+}
+
+.login-box a::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* 로고의 크기 조정 */
+  height: 20px;
+  background-image: url('image/google.png');
+  background-size: cover;
+}
+
+/* 회원가입 폼 스타일 */
+.signup-wrapper {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #8F5C0E;
+  margin-top: 60px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signup-form input,
+.signup-form select {
+  padding: 12px;
+  border: 1px solid #d3d5d7;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  outline: none;
+  border-color: #8F5C0E;
+}
+
+.signup-form input[type="button"] {
+  padding: 12px;
+  border: none;
+  background-color: #8F5C0E;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form input[type="button"]:hover {
+  background-color: #6f4608;
+}
+
+/* 성별 선택 부분 */
+.gender-selection {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gender-selection label {
+  font-size: 1rem;
+}
+
+ /* 기본 라디오 버튼 스타일을 숨김 */
+.gender-selection input[type="radio"] {
+  display: none;
+}
+
+/* 라벨 스타일 */
+.gender-selection label {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 5px;
+  border: 1px solid #d3d5d7;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* 라벨이 선택되지 않은 상태의 스타일 */
+.gender-selection input[type="radio"]:not(:checked) + label {
+  background-color: white;
+  color: #676767;
+}
+
+/* 라벨이 선택된 상태의 스타일 */
+.gender-selection input[type="radio"]:checked + label {
+  background-color: #6f4608;
+  color: #fff;
+  border-color: #6f4608;
+}
+
+/* 라벨에 마우스를 올렸을 때 */
+.gender-selection label:hover {
+  background-color: #f0f0f0;
+}
+
+/* 유저 관심 부분 */
+.user-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+/* 로그인 하단 부분 */
+.login-footer {
+	margin-top : 10px;
+}
+
+.login-footer a {
+  color: #6f4608;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+.mname-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mid-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.w-50 {
+	width: 50px;
+}
+
+.chk-box {
+	font-size: 14px;
+	color: #e45649;
+}
