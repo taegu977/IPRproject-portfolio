@@ -1,0 +1,315 @@
+.title-box {
+	display: flex;
+	justify-content: center;
+}
+
+.ptboard {
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+}
+
+.column {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 390px;
+  min-height: 550px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent; /* 기본 투명한 테두리 */
+ 	display: flex;
+  flex-direction: column; /* 세로 방향으로 정렬 */
+}
+
+.gray {
+  border-color: #8F5C0E; /* 보라색 테두리 */
+}
+
+.column .task-title {
+  display: flex;
+  align-items: center;
+}
+
+.column-title {
+	display: inline-block;  /* 텍스트와 이모지가 같은 줄에 위치하도록 설정 */
+    margin-right: 10px;  /* 텍스트와 이모지 사이의 간격 설정 */
+	font-size: 28px;
+	gap: 5px;
+  	padding-bottom: 14px;
+}
+
+.task-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* 컬러별 상단 경계선 스타일은 제거 */
+.column .task {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #d3d5d7; /* 각 작업 항목의 경계선 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 카드 모양의 그림자 효과 */
+  margin-bottom: 22px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.column .task:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.comment-count {
+  font-size: 14px;
+  color: gray;
+  margin-top: 5px;
+}
+
+/* 팀 리더 스타일 */
+.team-lead {
+  font-size: 12px;
+  color: #555;
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+
+/* 도움말 */
+.help-icon {
+	display: inline-block;  /* 이모지 아이콘을 텍스트와 같은 줄에 배치 */
+    font-size: 20px;  /* 이모지 크기 설정 */
+    cursor: pointer;
+    margin-left: 110px;
+}
+.help-icon1 {
+	display: inline-block;  /* 이모지 아이콘을 텍스트와 같은 줄에 배치 */
+    font-size: 20px;  /* 이모지 크기 설정 */
+    cursor: pointer;
+    margin-left: 80px;
+}
+.help-icon2 {
+	display: inline-block;  /* 이모지 아이콘을 텍스트와 같은 줄에 배치 */
+    font-size: 20px;  /* 이모지 크기 설정 */
+    cursor: pointer;
+    margin-left: 60px;
+}
+.help-icon4 {
+	display: inline-block;  /* 이모지 아이콘을 텍스트와 같은 줄에 배치 */
+    font-size: 20px;  /* 이모지 크기 설정 */
+    cursor: pointer;
+    margin-left: 115px;
+}
+.help-icon3 {
+	display: inline-block;  /* 이모지 아이콘을 텍스트와 같은 줄에 배치 */
+    font-size: 20px;  /* 이모지 크기 설정 */
+    cursor: pointer;
+    margin-left: 60px;
+}
+.help-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* 게시판 디자인 */
+
+/* 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #e5e5e5;
+    font-weight: bold;
+}
+
+table td a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* 페이지 네비게이션 스타일 */
+.page-box {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 15px;
+    background: linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.85));
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(143, 92, 14, 0.08);
+}
+
+.page ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 8px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.page li {
+    margin: 0 2px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.page .page_link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.page .page_link_bold {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(145deg, #b37d3d, #8F5C0E);
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(143, 92, 14, 0.15);
+}
+
+.page .page_link:hover {
+    background: linear-gradient(145deg, #b37d3d, #8F5C0E);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(143, 92, 14, 0.15);
+}
+
+.page .prev a,
+.page .next a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 32px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(143, 92, 14, 0.15);
+    border: none;
+    white-space: nowrap;
+}
+
+.page .prev a:hover,
+.page .next a:hover {
+    color: #007BFF;
+}
+
+
+/* 검색 박스 스타일 */
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.search-box select,
+.search-box input[type="text"] {
+    padding: 10px;
+    margin-right: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.search-box input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-box input[type="submit"]:hover {
+    background-color: #5a6d8a;
+}
+
+
+.search-box form {
+    display: flex;
+    align-items: center;
+    background: #e3eaf3;
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border: 1px solid #d1d1d1;
+}
+
+.search-box input[type="text"] {
+    outline: none;
+    padding: 10px 12px 10px 46px;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    background: #fff url('data:image/svg+xml;utf8,<svg fill="gray" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>') no-repeat 8px center;
+    width: 220px;
+    transition: box-shadow 0.2s;
+}
+
+.search-box input[type="text"]:focus {
+    box-shadow: 0 0 0 2px #b0c4de;
+}
+
+.search-box input[type="submit"] {
+    background: #7d8fa9;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 8px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-left: 8px;
+    margin-right: 10px;
+}
