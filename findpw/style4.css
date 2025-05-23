@@ -1,0 +1,154 @@
+/* 이미지 스타일 */
+img {
+  max-width: 100%;  /* 이미지의 최대 너비를 100%로 설정 */
+  height: auto;  /* 이미지 비율 유지 */
+}
+
+label {
+	width: 80px;
+	color: #333;
+	font-weight: 600;
+}
+
+.pw-title {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 14px;
+	color: #8F5C0E;
+}
+
+.errMsg {
+	display: flex;
+	justify-content: center;
+	color: #ff7373;
+}
+
+.c-content02 {
+  width: 100%;  /* c-content02 너비를 1280px로 설정 */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-box {
+  width: 286px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-box > ul{
+  display: flex;
+  padding-right: 10px;
+}
+
+.login-box a::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* 로고의 크기 조정 */
+  height: 20px;
+  background-image: url('image/google.png');
+  background-size: cover;
+}
+
+.info-box {
+	display: flex; align-items: center;
+	gap: 30px;
+}
+
+/* 회원가입 폼 스타일 */
+.signup-wrapper {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+  padding: 40px;
+  border: 2px solid #8F5C0E;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.signup-form input,
+.signup-form select {
+  padding: 12px;
+  border: 1px solid #d3d5d7;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  outline: none;
+  border-color: #8F5C0E;
+}
+
+.signup-form input[type="button"] {
+  padding: 12px;
+  border: none;
+  background-color: #8F5C0E;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form input[type="reset"] {
+  padding: 12px;
+  border: none;
+  background-color: #8F5C0E;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form input[type="submit"] {
+  padding: 12px;
+  border: none;
+  background-color: #8F5C0E;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form input[type="button"]:hover,
+.signup-form input[type="reset"]:hover,
+.signup-form input[type="submit"]:hover {
+  background-color: #6f4608;
+}
+
+/* 유저 관심 부분 */
+.user-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* 로그인 하단 부분 */
+.login-footer {
+	margin-top : 10px;
+}
+
+.login-footer a {
+  color: #6f4608;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
