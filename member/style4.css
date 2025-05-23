@@ -1,0 +1,169 @@
+/* ----- 메인 컨테이너 ----- */
+.main-disp {
+  display: flex;
+  justify-content: center;
+}
+
+.c-content02 {
+  min-width: 90%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px; /* 더 부드러운 둥근 모서리 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* 더 깊은 그림자 */
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.member-title {
+	display: flex;
+	justify-content: center;
+	margin-top: 28px;
+	margin-bottom: 28px;
+	color: #8F5C0E;
+}
+
+/* ----- 테이블 디자인 ----- */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #8F5C0E;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+td {
+  background-color: #fff;
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+/* 짝수, 홀수 행 구분 */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* 행 Hover 효과 */
+tr:hover {
+  background-color: rgba(27, 104, 228, 0.15);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* ----- 아이디 클릭 효과 ----- */
+td.id a {
+  font-weight: bold;
+  color: #8F5C0E;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+td.id a:hover {
+  color: #0f4db6;
+  text-decoration: underline;
+}
+
+/* ----- 수정/삭제 버튼 디자인 ----- */
+td.edit p, td.del a {
+  cursor: pointer;
+  font-weight: bold;
+  color: #8F5C0E;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+td.edit p:hover, td.del a:hover {
+  color: #d32f2f; /* 강조 효과 */
+  transform: scale(1.1);
+}
+
+/* ==================== 모달 (직급 등록) 디자인 ==================== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 모달 애니메이션 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -55%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* 모달 배경 */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* 모달 내부 스타일 */
+.modal h2 {
+  color: #8F5C0E;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal input, .modal select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal .modal-btn {
+  background-color: #8F5C0E;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal .modal-btn:hover {
+  background-color: #1557a0;
+}
+
+/* 닫기 버튼 */
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
