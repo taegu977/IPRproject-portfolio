@@ -1,0 +1,369 @@
+.container {
+	height: 80px;
+}
+
+h1 {
+ width: 290px;
+ height: 84px;
+}
+
+.logo-box {
+  width: 290px;
+  display: flex; justify-content: flex-end;
+  align-items: center;
+}
+
+.main-con {
+  display: flex; justify-content: space-between;
+  min-height: 100vh;
+}
+
+.c-content02 {
+  width: 100%;
+  background-color: #fff;
+}
+
+.img-box {
+  overflow: hidden;
+  padding-left: 100px; 
+}
+
+.img-box01 {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.login-box {
+	padding-right: 8px;
+}
+
+.login-box > ul{
+  display: flex;
+  margin-right: 10px;
+}
+
+li > a:hover {
+  cursor: pointer;
+  color: #8F5C0E;
+  text-decoration: underline;
+}
+
+.login-box a::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* 로고의 크기 조정 */
+  height: 20px;
+  background-size: cover;
+}
+
+.img-box img {
+  width: 100%; display: block;
+ }
+
+
+.align-center {
+  text-align: center;
+}
+
+.drawline {
+  text-decoration: line-through;
+}
+
+h2 {
+  display: flex; align-items: center;
+  gap: 10px; justify-content: center;
+}
+
+.container-low {
+	background-color: #ad957f;
+	display: flex; 
+	justify-content: space-between;
+	flex-grow: 1;
+	border-bottom: 1px solid #d3d5d7;
+	height: 56px;
+	padding-left: 38px;
+}
+.new-task {
+  border: 2px solid #fff; /* 포인트 컬러로 변경 */
+  color: #fff; /* 글자 색을 포인트 컬러로 설정 */
+  cursor: pointer;
+  width: 90px;
+  height: 34px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 8px;
+  margin-top: 9px;
+  margin-bottom: 11px;
+  margin-right: 16px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.new-task:hover {
+  transform: translateY(2px); /* 살짝 위로 떠오르게 */
+  background: linear-gradient(45deg, #8F5C0E, #4e2a04); /* 포인트 색으로 그라디언트 */
+  color: white; /* 글자 색을 흰색으로 변경 */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* 그림자 강화 */
+}
+
+.new-task:active {
+  transform: translateY(2px); /* 클릭했을 때 눌린 느낌 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 클릭 시 그림자 효과 */
+}
+
+/* 알림 팝업 스타일 */
+#notification_popup_layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.notification_popup_box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+    height: 600px;
+    width: 800px;
+    transform: translate(-50%, -50%);
+    z-index: 1002;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: slideIn 0.4s ease-out;
+}
+
+.notification_popup_cont {
+    padding: 50px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.notification_popup_cont h2 {
+    padding: 15px 0;
+    color: #1a1a1a;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* 테이블 스타일 추가 */
+.notification-content table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.notification-content th {
+    background: linear-gradient(135deg, #4a6b8a, #5dade2);
+    color: white;
+    font-weight: 600;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    border: none;
+    position: relative;
+}
+
+.notification-content th:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.notification-content td {
+    padding: 16px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    color: #2c3e50;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.notification-content td a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 2px 0;
+}
+
+.notification-content td a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #3498db;
+    transition: width 0.3s ease;
+}
+
+.notification-content td a:hover {
+    color: #2980b9;
+}
+
+.notification-content td a:hover::after {
+    width: 100%;
+}
+
+.notification-content tr:last-child td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.notification-content tr:hover td {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.notification-content tr td:last-child {
+    font-weight: 600;
+    color: #e74c3c;
+}
+
+/* 데이터가 없을 때 표시할 메시지 스타일 */
+.no-data-message {
+    text-align: center;
+    padding: 30px;
+    color: #7f8c8d;
+    font-style: italic;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.notification_close_btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.notification_close_btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transform: rotate(90deg);
+}
+
+.notification_close_btn .material-symbols-outlined {
+    font-size: 20px;
+    color: #666;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translate(-50%, -60%); opacity: 0; }
+    to { transform: translate(-50%, -50%); opacity: 1; }
+}
+
+/* 스크롤바 스타일링 */
+.notification_popup_box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.notification_popup_box::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.notification_popup_box::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.notification_popup_box::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* 알림 배지 스타일 */
+.notification-badge {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    background-color: #ff4444;
+    color: white;
+    border-radius: 50%;
+    padding: 0px 3px;
+    font-size: 10px;
+    min-width: 12px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 1;
+    transform: translate(25%, -25%);
+}
+
+.notification-icon {
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+}
+
+.bell-icon {
+    fill: #8F5C0E;
+    transition: fill 0.3s ease;
+}
+
+/* 흔들리는 애니메이션 정의 */
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.notification-icon:hover .bell-icon {
+    fill: #000;
+    animation: shake 0.5s ease-in-out;
+    transform-origin: top center;
+}
+
+.patent-title {
+    text-decoration: none !important;
+}
+
+.patent-title:hover {
+    text-decoration: none !important;
+    color: #5dade2 !important;
+}
+
