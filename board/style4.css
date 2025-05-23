@@ -1,0 +1,248 @@
+
+/* ---- 메인 콘텐츠 레이아웃 ---- */
+.main-con01 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+.c-content02 {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+  min-height: 800px;
+  border-radius: 8px; /* 둥근 테두리 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+}
+
+
+.title-box {
+  display: flex;
+  justify-content: center;
+}
+
+.serch-box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.write-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* ---- 이미지 박스 스타일링 ---- */
+.img-box {
+  overflow: hidden;
+  padding-left: 50px;
+  width: 100%;
+}
+
+.img-box01 {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  padding-left: 50px;
+}
+
+.logo-box {
+  width: 290px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-box img {
+  width: 100%;
+  display: block;
+}
+
+/* ---- 테이블 스타일 ---- */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0; /* 셀 간격 없애기 */
+  border-radius: 4px; /* 테이블 모서리 둥글게 */
+  overflow: hidden; /* 경계선을 넘는 부분 숨기기 */
+}
+
+th {
+  background-color: #8F5C0E; /* 포인트 색상 적용 */
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 2px solid #d3d5d7; /* 테두리 추가 */
+  border-top-left-radius: 8px; /* 왼쪽 상단 모서리 둥글게 */
+  border-top-right-radius: 8px; /* 오른쪽 상단 모서리 둥글게 */
+}
+
+td {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd; /* 테두리 추가 */
+}
+
+/* 마지막 행에 대해 둥근 모서리 처리 */
+tr:last-child td:first-child {
+  border-bottom-left-radius: 8px; /* 왼쪽 하단 모서리 둥글게 */
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 8px; /* 오른쪽 하단 모서리 둥글게 */
+}
+
+.width70 {
+  width: 70px;
+}
+
+.width100 {
+  width: 100px;
+}
+
+.width150 {
+  width: 150px;
+}
+
+.width200 {
+  width: 200px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+a {
+  color: #8F5C0E; /* 링크에 포인트 색상 적용 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #674004; /* 링크 hover 시 어두운 포인트 색상 */
+}
+
+/* ---- 검색 박스 스타일 ---- */
+.serch-box select,
+.serch-box input[type="text"],
+.serch-box input[type="submit"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.serch-box input[type="submit"] {
+  background-color: #8F5C0E;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.serch-box input[type="button"]:hover {
+  background-color: #674004; /* 버튼 hover 시 어두운 포인트 색상 */
+}
+
+/* ---- 글쓰기 버튼 스타일 ---- */
+.write-box input[type="button"] {
+  background-color: #8F5C0E;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.write-box input[type="button"]:hover {
+  background-color: #674004; /* 버튼 hover 시 어두운 포인트 색상 */
+}
+
+/* 로그인 박스 */
+.login-box > ul {
+  display: flex;
+}
+
+.login-box a::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* 로고의 크기 조정 */
+  height: 20px;
+  background-image: url('image/google.png');
+  background-size: cover;
+}
+
+/* ---- 테이블 헤더 및 바디 구분선 ---- */
+th, td {
+  border-right: 1px solid #ddd; /* 구분선 */
+}
+
+th:last-child, td:last-child {
+  border-right: none; /* 마지막 열 구분선 없애기 */
+}
+
+/* ---- 테이블 정렬 및 텍스트 처리 ---- */
+table {
+  table-layout: fixed;
+}
+
+table th, table td {
+  word-wrap: break-word; /* 긴 텍스트 줄 바꿈 */
+}
+
+/* ---- 테이블 내부 셀에 대한 스타일 추가 ---- */
+td, th {
+  padding: 12px 15px; /* 패딩 추가 */
+}
+
+tr:hover {
+  background-color: rgba(27, 104, 228, 0.1); /* hover 시 배경 색 변경 */
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* 짝수 행 배경 색 변경 */
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.2); /* 홀수 행 배경 색 변경 */
+}
+
+/*페이지 처리*/
+.page-box {
+	display: flex;
+	justify-content: center;
+}
+
+
+.page {
+	display: flex;
+}
+
+.page li {
+	list-style: none;
+	margin: 10px;
+}
+
+.prev {
+	border: 1px solid #e9e9e9;
+	border-radius: 5px;
+}
+
+.next {
+	border: 1px solid #e9e9e9;
+	border-radius: 5px;
+}
+
+.page_link {
+	text-decoration: none;
+}
+
+.page_link_bold {
+	text-decoration: none;
+	font-weight: bolder;
+	color: #8F5C0E;
+}

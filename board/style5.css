@@ -1,0 +1,341 @@
+/* ---- 폰트 불러오기 ---- */
+/* Pretendard */
+/* Thin 100 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+/* ExtraLight 200 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+/* Light 300 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+/* Regular 400 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+/* Medium 500 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+/* SemiBold 600 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+/* Bold 700 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+/* ExtraBold 800 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+/* Black 900 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+/* ~~~~~~ g-market 불러오기 예정 ~~~~~~*/
+/* Light 300 */
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+/* Medium 500 */
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+/* Bold 700 */
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ---- 노멀라이즈 ---- */
+/* body 기본상태로 커스텀 */
+/* * 전체선택자: 모든 선택자를 선택 */
+*{letter-spacing: -0.02em;}
+body,ul,li{margin: 0; padding: 0; list-style: none;}
+/* 폰트 적용 */
+body{font-family: 'Pretendard', sans-serif;}
+/* h태그 노멀라이즈 */
+h1,h2,h3,h4,h5,h6 {
+  margin: 0; font-weight: normal;
+  /* inherit -> 기본값 */
+  font-size: inherit;
+}
+/* 컬러 기본값, a태그 밑줄제거 */
+a{color: inherit; text-decoration: none;}
+
+/* ---- 라이브러리 ---- */
+.fw-100{font-weight: 100;}
+.fw-200{font-weight: 200;}
+.fw-300{font-weight: 300;}
+.fw-400{font-weight: 400;}
+.fw-500{font-weight: 500;}
+.fw-600{font-weight: 600;}
+.fw-700{font-weight: 700;}
+.fw-800{font-weight: 800;}
+.fw-900{font-weight: 900;}
+
+.fs-10{font-size: 10px;}
+.fs-11{font-size: 11px;}
+.fs-12{font-size: 12px;}
+.fs-13{font-size: 13px;}
+.fs-14{font-size: 14px;}
+.fs-15{font-size: 15px;}
+.fs-16{font-size: 16px;}
+.fs-18{font-size: 18px;}
+.fs-21{font-size: 21px;}
+.fs-24{font-size: 24px;}
+.fs-26{font-size: 26px;}
+.fs-28{font-size: 28px;}
+.fs-31{font-size: 31px;}
+.fs-32{font-size: 32px;}
+.fs-34{font-size: 34px;}
+.fs-38{font-size: 38px;}
+.fs-42{font-size: 42px;}
+.fs-46{font-size: 46px;}
+.fs-48{font-size: 48px;}
+.fs-50{font-size: 50px;}
+.fs-52{font-size: 52px;}
+.fs-54{font-size: 54px;}
+.fs-56{font-size: 56px;}
+.fs-58{font-size: 58px;}
+.fs-62{font-size: 62px;}
+.fs-64{font-size: 64px;}
+.fs-68{font-size: 68px;}
+.fs-72{font-size: 72px;}
+
+.fc-fff{color: #fff;}
+.fc-222{color: #222;}
+.fc-4f4f4f{color: #4f4f4f;}
+.fc-1B{color: #8F5C0E;}
+.fc-8f{color: #8F5C0E;}
+.fc-17{color: #171717;}
+
+
+.Dongle{font-family: "Dongle";}
+.Gowun-Dodum{font-family: "Gowun Dodum";}
+
+/* 여백/패딩 */
+.pt-4{padding-top: 4px;}
+.pt-8{padding-top: 8px;}
+.pt-10{padding-top: 10px;}
+.pt-12{padding-top: 12px;}
+.pt-16{padding-top: 16px;}
+.pt-20{padding-top: 20px;}
+.pt-24{padding-top: 24px;}
+.pt-28{padding-top: 28px;}
+.pt-32{padding-top: 32px;}
+.pt-36{padding-top: 36px;}
+.pt-40{padding-top: 40px;}
+
+.pl-4{padding-left: 4px;}
+.pl-8{padding-left: 8px;}
+.pl-10{padding-left: 10px;}
+.pl-12{padding-left: 12px;}
+.pl-16{padding-left: 16px;}
+.pl-20{padding-left: 20px;}
+.pl-24{padding-left: 24px;}
+.pl-28{padding-left: 28px;}
+.pl-32{padding-left: 32px;}
+.pl-36{padding-left: 36px;}
+.pl-40{padding-left: 40px;}
+
+.pr-4{padding-right: 4px;}
+.pr-8{padding-right: 8px;}
+.pr-10{padding-right: 10px;}
+.pr-12{padding-right: 12px;}
+.pr-16{padding-right: 16px;}
+.pr-20{padding-right: 20px;}
+.pr-24{padding-right: 24px;}
+.pr-28{padding-right: 28px;}
+.pr-32{padding-right: 32px;}
+.pr-36{padding-right: 36px;}
+.pr-40{padding-right: 40px;}
+
+.pb-4{padding-bottom: 4px;}
+.pb-8{padding-bottom: 8px;}
+.pb-10{padding-bottom: 10px;}
+.pb-12{padding-bottom: 12px;}
+.pb-16{padding-bottom: 16px;}
+.pb-20{padding-bottom: 20px;}
+.pb-24{padding-bottom: 24px;}
+.pb-28{padding-bottom: 28px;}
+.pb-32{padding-bottom: 32px;}
+.pb-36{padding-bottom: 36px;}
+.pb-40{padding-bottom: 40px;}
+
+/* 여백/마진 */
+.mt-4{margin-top: 4px;}
+.mt-8{margin-top: 8px;}
+.mt-10{margin-top: 10px;}
+.mt-12{margin-top: 12px;}
+.mt-16{margin-top: 16px;}
+.mt-20{margin-top: 20px;}
+.mt-24{margin-top: 24px;}
+.mt-28{margin-top: 28px;}
+.mt-32{margin-top: 32px;}
+.mt-36{margin-top: 36px;}
+.mt-38{margin-top: 38px;}
+.mt-40{margin-top: 40px;}
+.mt-42{margin-top: 42px;}
+.mt-48{margin-top: 48px;}
+.mt-54{margin-top: 54px;}
+.mt-56{margin-top: 56px;}
+.mt-58{margin-top: 58px;}
+.mt-60{margin-top: 60px;}
+.mt-68{margin-top: 68px;}
+
+.ml-4{margin-left: 4px;}
+.ml-8{margin-left: 8px;}
+.ml-10{margin-left: 10px;}
+.ml-12{margin-left: 12px;}
+.ml-16{margin-left: 16px;}
+.ml-18{margin-left: 18px;}
+.ml-20{margin-left: 20px;}
+.ml-24{margin-left: 24px;}
+.ml-28{margin-left: 28px;}
+.ml-32{margin-left: 32px;}
+.ml-36{margin-left: 36px;}
+.ml-40{margin-left: 40px;}
+
+.mr-4{margin-right: 4px;}
+.mr-6{margin-right: 6px;}
+.mr-8{margin-right: 8px;}
+.mr-10{margin-right: 10px;}
+.mr-12{margin-right: 12px;}
+.mr-16{margin-right: 16px;}
+.mr-20{margin-right: 20px;}
+.mr-24{margin-right: 24px;}
+.mr-26{margin-right: 26px;}
+.mr-28{margin-right: 28px;}
+.mr-32{margin-right: 32px;}
+.mr-34{margin-right: 34px;}
+.mr-36{margin-right: 36px;}
+.mr-38{margin-right: 38px;}
+.mr-40{margin-right: 40px;}
+
+.mb-2{margin-bottom: 2px;}
+.mb-4{margin-bottom: 4px;}
+.mb-8{margin-bottom: 8px;}
+.mb-10{margin-bottom: 10px;}
+.mb-12{margin-bottom: 12px;}
+.mb-14{margin-bottom: 14px;}
+.mb-16{margin-bottom: 16px;}
+.mb-20{margin-bottom: 20px;}
+.mb-24{margin-bottom: 24px;}
+.mb-28{margin-bottom: 28px;}
+.mb-32{margin-bottom: 32px;}
+.mb-36{margin-bottom: 36px;}
+.mb-38{margin-bottom: 38px;}
+.mb-48{margin-bottom: 48px;}
+.mb-58{margin-bottom: 58px;}
+.mb-60{margin-bottom: 60px;}
+.mb-62{margin-bottom: 62px;}
+.mb-64{margin-bottom: 64px;}
+.mb-68{margin-bottom: 68px;}
+.mb-100{margin-bottom: 100px;}
+
+.img-box img {
+  display: block;
+}
+
+.all-section {
+  margin-left: auto; margin-right: auto;
+}
+
+.container {
+  display: flex; justify-content: space-between;
+  flex-grow: 1;
+  border-bottom: 1px solid #d3d5d7;
+}
+
+.head-box {
+  width: auto;
+  /* border: 1px solid red; */
+}
+
+.nav-box > ul {
+  display: flex; gap: 52px;
+  height: 100%; align-items: center;
+  width: 100%;
+}
+
+.menu-box {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.menu-box > a:hover {
+  color: #b7cd7e;
+  text-decoration: underline;
+}
+
+.login-ulbox > li:hover {
+	color: #8F5C0E;
+  	text-decoration: underline;
+}
+
+/* 푸터 스타일 */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  color: 17171B;
+  border-top: 1px solid #d3d5d7;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+}
+
+/* 특허 알림 스타일 */
+.patent-title {
+    transition: all 0.3s ease;
+    font-weight: bold;
+    color: #333;
+}
+
+.patent-title.read {
+    font-weight: normal;
+    color: #666;
+}
