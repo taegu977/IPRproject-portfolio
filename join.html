@@ -1,0 +1,108 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="UTF-8" />
+
+<title>웹 페이지 작성 실습</title>
+<link rel="stylesheet" href="join/style0.css" />
+<link rel="stylesheet" href="join/style1.css" />
+<link rel="stylesheet" href="join/style2.css" />
+<link rel="stylesheet" href="join/style3.css" />
+<script src="join/script0.js"></script>
+<script src="join/script1.js"></script>
+<link rel="stylesheet" href="join/style4.css" />
+<link rel="stylesheet" href="join/style5.css" />
+<script src="join/script2.js"></script>
+</head>
+<body>
+<div class="all-section">
+	 <div class="container">
+      <div class="head-box">
+      	<h1>
+      		<a class="ml-24" href="home.html">
+      		<img alt="logo" src="join/image0.png" />
+          </a>
+        </h1>
+      </div>
+        <nav class="nav-box">
+          <ul>
+          </ul>
+        </nav>
+        <div class="img logo-box">
+          <div class="login-box">
+            <ul class="align-center">
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"></li>
+							<li class="fs-16 fc-8f">
+							
+							</li>          	  
+            	<li class="fs-16 fc-8f"><a href="login.html">로그인</a></li>
+            	<li class="fs-16 fc-8f"><a href="join.html">회원가입</a></li>
+            </ul>
+          </div>
+        </div>
+    	</div>
+    </div>
+	
+	<div>
+ <div class="all-section">
+    <div class="main-con">
+      <div class="c-content02">
+      
+        <!-- 회원가입 폼 시작 -->
+        <div class="signup-wrapper">
+          <span class="mb-24 fs-18 fw-600 fc-8f">회원가입</span>
+          <form class="signup-form" name="frmJoin" action="join" method="post">
+            <!-- 이름 입력 필드 -->
+            <input type="text" id="name" name="name" placeholder="이름" />
+      
+            <!-- 아이디 입력 필드 -->
+            <input type="text" id="member_id" name="member_id" placeholder="ID" />
+            
+            <!-- 아이디 중복체크 필드 -->
+            <input type="button" value="아이디 중복 체크" onclick="location.href='#'" />
+            <div id="msg"></div>  <!-- 중복 여부 메시지 출력 -->
+      			
+            <!-- 비밀번호 입력 필드 -->
+            <input type="password" id="password" name="password" placeholder="Password" oninput="checkPassword(this.value)" />
+            <div id="password-error" class="error-message" style="color: red; font-size: 12px; margin-top: 5px; display: none;"></div>
+            
+            <!-- 이메일 입력 필드 -->
+            <input type="text" id="email" name="email" placeholder="E-mail" />
+
+            <!-- 생년월일 입력 필드 -->
+            <input type="date" id="birthday" name="birthday" required="" />
+      
+            <!-- 주소 입력 필드 -->
+            <input type="text" id="address" name="address" placeholder="주소" />
+            
+            <!-- 전화번호 입력 필드 -->
+            <input type="text" id="telno" name="telno" placeholder="휴대전화번호( - 없이 입력)" />
+            
+            <!-- 성별 선택 -->
+     			<div class="gender-selection">
+				    <input type="radio" name="gender" value="M" id="male" />
+				    <label for="male">남성</label>
+				    <input type="radio" name="gender" value="F" id="female" />
+				    <label for="female">여성</label>
+					</div>
+
+            <!-- 가입 버튼 -->
+            <input type="button" id="button" value="가입하기" onclick="location.href='#'" />
+          </form>
+          
+          <div class="login-footer">
+            <p>이미 계정이 있으신가요? <a href="login">로그인</a></p>
+          </div>
+        </div>
+        <!-- 회원가입 폼 끝 -->
+      </div>
+    </div>
+   </div>
+
+	
+	<footer>
+	      <h3>IPR SOLUTION System©</h3>
+	</footer>
+
+</div></body></html>

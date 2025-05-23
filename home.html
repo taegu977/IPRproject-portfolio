@@ -1,0 +1,518 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="home/style0.css" />
+<link rel="stylesheet" href="home/style1.css" />
+<link rel="stylesheet" href="home/style2.css" />
+<link rel="stylesheet" href="home/style3.css" />
+<script src="home/script0.js"></script>
+<script src="home/script1.js"></script>
+<link rel="stylesheet" href="home/style4.css" />
+<link rel="stylesheet" href="home/style5.css" />
+<script src="home/script2.js"></script>
+</head>
+<body>
+<!-- 현재 로그인한 사용자 정보를 JavaScript에서 사용하기 위한 hidden input -->
+<input type="hidden" id="currentUserName" value="aaa" />
+
+<div class="all-section">
+	 <div class="container">
+      <div class="head-box">
+      	<h1>
+      		<a class="ml-24" href="home.html">
+      		<img alt="logo" src="home/image0.png" />
+          </a>
+        </h1>
+      </div>
+        <div class="img logo-box">
+          <div class="login-box">
+            <ul class="lgoin-ulbox align-center">
+              <li class="fs-16 fc-8f">
+                <a href="javascript:void(0)" class="notification-icon" style="text-decoration: none;">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bell-icon" viewBox="0 0 24 24" width="24" height="24">
+                      <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/>
+                  </svg>
+                  <span class="notification-badge alarm-icon" data-total="4">4</span>
+                </a>
+              </li>
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"><a href="member.html">회원관리</a></li>
+							<li class="fs-16 fc-8f">
+							<a href="login.html">로그아웃
+							<span class="fs-16">[aaa]</span>
+							</a>
+							</li>          	  
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"></li>
+            </ul>
+          </div>
+        </div>
+    	</div>
+    	 <div class="container-low">
+        <nav class="nav-box">
+          <ul>
+          	  <li class="fs-16 menu-box fc-fff"><a href="ptmanage.html">발명승인 관리</a></li>
+          	  
+	          <li class="fs-16 menu-box fc-fff"><a href="ptapplication.html">출원/등록</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="ptmaintenance.html">특허유지 관리</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="serch.html">특허 검색</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="board.html">공지사항</a></li>
+          </ul>
+        </nav>
+         <div class="new-task" onclick="location.href='writeProject.html'">+ 발명등록</div>
+    	</div>
+    </div>
+	
+	<!-- 알림 팝업 레이어 -->
+	<div id="notification_popup_layer">
+	    <div class="notification_popup_box">
+	        <div style="height: 10px; width: 100%; float: top;">
+	            <a href="javascript:void(0)" class="notification_close_btn">
+             <span class="material-symbols-outlined">close</span>
+	            </a>
+	        </div>
+	        <div class="notification_popup_cont">
+	            <h2>특허만료알림</h2>
+	            <div class="notification-content">
+	                <table class="noti-talbe">
+	                    <thead>
+	                        <tr>
+	                            <th>특허명</th>
+	                            <th>갱신일</th>
+	                            <th>남은기간</th>
+	                            <th>상태</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                    <tr data-project-id="A005">
+	                        <td><a href="readProject.html" class="patent-title" data-project-id="A005" style="color: rgb(93, 173, 226); font-weight: bold;">테스트2</a></td>
+	                        <td>2025-06-06</td>
+	                        <td style="color: #FF0000;">17일</td>
+	                        <td class="read-status" style="color: rgb(0, 0, 0);">읽지 않음</td>
+	                    </tr>
+	                    <tr data-project-id="A001">
+	                        <td><a href="readProject.html" class="patent-title" data-project-id="A001" style="color: rgb(93, 173, 226); font-weight: bold;">전기자동차</a></td>
+	                        <td>2025-06-07</td>
+	                        <td style="color: #FF0000;">18일</td>
+	                        <td class="read-status" style="color: rgb(0, 0, 0);">읽지 않음</td>
+	                    </tr>
+	                    <tr data-project-id="A002">
+	                        <td><a href="readProject.html" class="patent-title" data-project-id="A002" style="color: rgb(93, 173, 226); font-weight: bold;">전기배터리</a></td>
+	                        <td>2025-06-07</td>
+	                        <td style="color: #FF0000;">18일</td>
+	                        <td class="read-status" style="color: rgb(0, 0, 0);">읽지 않음</td>
+	                    </tr>
+	                    <tr data-project-id="A004">
+	                        <td><a href="readProject.html" class="patent-title" data-project-id="A004" style="color: rgb(93, 173, 226); font-weight: bold;">테스트1</a></td>
+	                        <td>2025-06-07</td>
+	                        <td style="color: #FF0000;">18일</td>
+	                        <td class="read-status" style="color: rgb(0, 0, 0);">읽지 않음</td>
+	                    </tr>
+	                    </tbody>
+	                </table>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div>
+    <div class="all-section">
+        <div class="main-con">
+            <div class="l-container">
+                <div class="search-box">
+                    <form name="indexFrm" action="/" method="post">
+                        <select name="searchType">
+                            <option value="1">출원번호</option>
+                            <option value="2">출원인</option>
+                            <option value="3">특허명</option>
+                        </select>
+                        <input type="text" name="keyword" value="" />
+                        <input type="button" value="검색" onclick="location.href='#'" />
+                        <!-- <select name="recordSize" onchange="viewIndex()">
+                            <option value="10" th:selected="${search.recordSize == 10}">10개</option>
+                            <option value="20" th:selected="${search.recordSize == 20}">20개</option>
+                            <option value="50" th:selected="${search.recordSize == 50}">50개</option>
+                            <option value="100" th:selected="${search.recordSize == 100}">100개</option>
+                        </select> -->
+                    </form>
+                </div>
+                
+                <table>
+                    <tbody><tr>
+                        <th class="width70">출원번호</th>
+                        <th class="width200">특허명</th>
+                        <th class="width70">출원인</th>
+                        <th class="width70">특허등록날짜</th>
+                        <th class="width70">특허만료날짜</th>
+                        <th class="width70">진행상태</th>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td class="write align-center">55555</td>
+                        <td class="date align-center">
+                            <a href="readProject.html">로봇청소기</a>
+                        </td>
+                        <td class="date align-center">발명자4</td>
+                        <td class="hitno align-center"></td>
+                        <td class="hitno align-center"></td> 
+                        
+                        
+                        
+                        <td class="hitno align-center">심사청구</td>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="write align-center"></td>
+                        <td class="date align-center">
+                            <a href="readProject.html">스마트워치</a>
+                        </td>
+                        <td class="date align-center">발명자1</td>
+                        <td class="hitno align-center"></td>
+                        <td class="hitno align-center"></td> 
+                        
+                        <td class="hitno align-center">출원준비</td>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="write align-center"></td>
+                        <td class="date align-center">
+                            <a href="readProject.html">스마트워치</a>
+                        </td>
+                        <td class="date align-center">발명자3</td>
+                        <td class="hitno align-center"></td>
+                        <td class="hitno align-center"></td> 
+                        
+                        <td class="hitno align-center">출원준비</td>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="write align-center">3333</td>
+                        <td class="date align-center">
+                            <a href="readProject.html">로봇청소기</a>
+                        </td>
+                        <td class="date align-center">발명자2</td>
+                        <td class="hitno align-center"></td>
+                        <td class="hitno align-center"></td> 
+                        
+                        
+                        
+                        
+                        <td class="hitno align-center">심사거절대응</td>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="write align-center"></td>
+                        <td class="date align-center">
+                            <a href="readProject.html">스마트폰</a>
+                        </td>
+                        <td class="date align-center">발명자2</td>
+                        <td class="hitno align-center"></td>
+                        <td class="hitno align-center"></td> 
+                        
+                        <td class="hitno align-center">출원준비</td>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="write align-center">2222</td>
+                        <td class="date align-center">
+                            <a href="readProject.html">전기자동차</a>
+                        </td>
+                        <td class="date align-center">발명자1</td>
+                        <td class="hitno align-center"></td>
+                        <td class="hitno align-center"></td> 
+                        
+                        
+                        
+                        
+                        
+                        <td class="hitno align-center">특허출원관리</td>
+                        
+                        
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="write align-center">1111</td>
+                        <td class="date align-center">
+                            <a href="readProject.html">전기배터리</a>
+                        </td>
+                        <td class="date align-center">ccc</td>
+                        <td class="hitno align-center"></td>
+                        <td class="hitno align-center"></td> 
+                        
+                        
+                        
+                        
+                        
+                        
+                        <td class="hitno align-center">특허등록대기</td>
+                        
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="write align-center"></td>
+                        <td class="date align-center">
+                            <a href="readProject.html">제목</a>
+                        </td>
+                        <td class="date align-center">발명자</td>
+                        <td class="hitno align-center"></td>
+                        <td class="hitno align-center"></td> 
+                        
+                        
+                        <td class="hitno align-center">발명등록반려</td>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="write align-center">01-11111116</td>
+                        <td class="date align-center">
+                            <a href="readProject.html">테스트4</a>
+                        </td>
+                        <td class="date align-center">김씨</td>
+                        <td class="hitno align-center"></td>
+                        <td class="hitno align-center"></td> 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <td class="hitno align-center">심사거절반려</td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="write align-center">01-11111118</td>
+                        <td class="date align-center">
+                            <a href="readProject.html">테스트3</a>
+                        </td>
+                        <td class="date align-center">가씨</td>
+                        <td class="hitno align-center"></td>
+                        <td class="hitno align-center"></td> 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <td class="hitno align-center">특허출원승인</td>
+                        
+                        
+                        
+                    </tr>
+                </tbody></table>
+
+                <div class="page-box">    
+                    <ul class="page">
+                        <!-- 이전 페이지 링크 -->
+                        
+
+                        <!-- 페이지 번호 -->
+                        <li class="page_item">
+                            <a class="page_link_bold" href="#">1</a>
+
+                            
+                        </li>
+                        <li class="page_item">
+                            
+
+                            <a class="page_link" href="#">2</a>
+                        </li>
+
+                        <!-- 다음 페이지 링크 -->
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="c-content02">
+             	<div class="index-titlebox">
+                    	<span class="fc-8f fs-42 fw-700 mt-32 mb-10">IPR SOLUTION</span>
+                </div>
+                <div class="file-container">
+                    <div class="file-style">
+                        <div class="file-icon">
+                            <span class="fs-42 folder material-symbols-outlined">folder</span>
+                            <div class="align-center fs-12 file-name">발명미승인</div>
+                            <div class="align-center fs-12 file-name mt-4 mb-4">0건</div>
+                        </div>
+                    </div>
+                    <div class="file-style">
+                        <div class="file-icon">
+                            <span class="fs-42 folder material-symbols-outlined">folder</span>
+                            <div class="align-center fs-12 file-name">발명등록반려</div>
+                            <div class="align-center fs-12 file-name mt-4 mb-4">2건</div>
+                        </div>
+                    </div>
+                    <div class="file-style">
+                        <div class="file-icon">
+                            <span class="fs-42 folder material-symbols-outlined">folder</span>
+                            <div class="align-center fs-12 file-name">출원준비</div>
+                            <div class="align-center fs-12 file-name mt-4 mb-4">3건</div>
+                        </div>
+                    </div>
+                    <div class="file-style">
+                        <div class="file-icon">
+                            <span class="fs-42 folder material-symbols-outlined">folder</span>
+                            <div class="align-center fs-12 file-name">심사청구</div>
+                            <div class="align-center fs-12 file-name mt-4 mb-4">1건</div>
+                        </div>
+                    </div>
+                    <div class="file-style">
+                        <div class="file-icon">
+                            <span class="fs-42 folder material-symbols-outlined">folder</span>
+                            <div class="align-center fs-12 file-name">심사거절대응</div>
+                            <div class="align-center fs-12 file-name mt-4 mb-4">1건</div>
+                        </div>
+                    </div>
+                    <div class="file-style">
+                        <div class="file-icon">
+                            <span class="fs-42 folder material-symbols-outlined">folder</span>
+                            <div class="align-center fs-12 file-name">심사거절반려</div>
+                            <div class="align-center fs-12 file-name mt-4 mb-4">1건</div>
+                        </div>
+                    </div>
+                    <div class="file-style">
+                        <div class="file-icon">
+                            <span class="fs-42 folder material-symbols-outlined">folder</span>
+                            <div class="align-center fs-12 file-name">특허출원관리</div>
+                            <div class="align-center fs-12 file-name mt-4 mb-4">1건</div>
+                        </div>
+                    </div>
+                    <div class="file-style">
+                        <div class="file-icon">
+                            <span class="fs-42 folder material-symbols-outlined">folder</span>
+                            <div class="align-center fs-12 file-name">특허등록대기</div>
+                            <div class="align-center fs-12 file-name mt-4 mb-4">1건</div>
+                        </div>
+                    </div>
+                    <div class="file-style">
+                        <div class="file-icon">
+                            <span class="fs-42 folder material-symbols-outlined">folder</span>
+                            <div class="align-center fs-12 file-name">특허 등록승인</div>
+                            <div class="align-center fs-12 file-name mt-4 mb-4">1건</div>
+                        </div>
+                    </div>
+                    <div class="file-style">
+                        <div class="file-icon">
+                            <span class="fs-42 folder material-symbols-outlined">folder</span>
+                            <div class="align-center fs-12 file-name">특허 등록</div>
+                            <div class="align-center fs-12 file-name mt-4 mb-4">4건</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="im-box">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <button type="button" class="calendar-prev-btn">
+                            	<span class="arrow_left  material-symbols-rounded">arrow_left</span>
+                            </button>
+                            <span>
+                                <span class="calendar-year">2025</span>
+                                <span class="calendar-month">5월</span>
+                            </span>
+                            <button type="button" class="calendar-next-btn">
+                            	<span class="arrow_right material-symbols-rounded">arrow_right</span>
+                            </button>
+                            <button type="button" class="calendar-today-btn">TO DAY</button>
+                        </div>
+                        <div class="calendar-body">
+                            <div class="calendar-weekdays">
+                                <span class="month-box">일</span><span class="month-box">월</span><span class="month-box">화</span><span class="month-box">수</span><span class="month-box">목</span><span class="month-box">금</span><span class="month-box">토</span>
+                            </div>
+                            <div class="calendar-dates"><span></span><span></span><span></span><span></span><span data-date="2025-5-1">1</span><span data-date="2025-5-2">2</span><span data-date="2025-5-3">3</span><span data-date="2025-5-4">4</span><span data-date="2025-5-5">5</span><span data-date="2025-5-6">6</span><span data-date="2025-5-7">7</span><span data-date="2025-5-8">8</span><span data-date="2025-5-9">9</span><span data-date="2025-5-10">10</span><span data-date="2025-5-11">11</span><span data-date="2025-5-12">12</span><span data-date="2025-5-13">13</span><span data-date="2025-5-14">14</span><span data-date="2025-5-15">15</span><span data-date="2025-5-16">16</span><span data-date="2025-5-17">17</span><span data-date="2025-5-18">18</span><span data-date="2025-5-19">19</span><span class="today" data-date="2025-5-20">20</span><span data-date="2025-5-21">21</span><span data-date="2025-5-22">22</span><span data-date="2025-5-23">23</span><span data-date="2025-5-24">24</span><span data-date="2025-5-25">25</span><span data-date="2025-5-26">26</span><span data-date="2025-5-27">27</span><span data-date="2025-5-28">28</span><span data-date="2025-5-29">29</span><span data-date="2025-5-30">30</span><span data-date="2025-5-31">31</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 날짜 클릭 시 나타날 팝업창 -->
+    <form name="memoFrm" action="/memo" method="post" class="reply-wrapper" id="memoFrm" onsubmit="return false;">
+    <div id="date-popup" class="date-popup" style="display: none;">
+        <div class="date-popup-content">
+            <div class="date-popup-drag-area"></div>
+            <div class="date-popup-header">
+                <div class="date-popup-title"></div>
+                <button type="button" class="date-popup-close"></button>
+            </div>
+            <div class="date-popup-body">
+                <!-- 여기에 팝업창 내용을 추가할 수 있습니다 -->
+                <div class="popup-content">
+                <textarea name="content" class="comment-input" placeholder="메모를 입력해주세요"></textarea>
+                 <input type="hidden" name="member_id" value="aaa" />
+                 <input type="hidden" id="memo_date" name="memo_date" value="" />
+                    <div class="submit-group">
+		            <input type="button" value="저장" class="submit-button" onclick="location.href='#'" />
+		            </div>
+		             <div class="reply-list">
+		            <div class="reply-header">
+		            	<div class="reply-text">
+		            	 <span class="pinboard material-symbols-rounded mr-6">pinboard</span>
+		            	 <span>Memo</span>
+		            	</div> 
+		            </div>
+		            <div class="replies">
+		                
+		            </div>
+		        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form></div>
+	
+	<footer>
+	      <h3>IPR SOLUTION System©</h3>
+	</footer>
+
+</body></html>

@@ -1,0 +1,200 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="ptmaintenance/style0.css" />
+<link rel="stylesheet" href="ptmaintenance/style1.css" />
+<link rel="stylesheet" href="ptmaintenance/style2.css" />
+<link rel="stylesheet" href="ptmaintenance/style3.css" />
+<script src="ptmaintenance/script0.js"></script>
+<script src="ptmaintenance/script1.js"></script>
+<link rel="stylesheet" href="ptmaintenance/style4.css" />
+<link rel="stylesheet" href="ptmaintenance/style5.css" />
+<script src="ptmaintenance/script2.js"></script>
+</head>
+<body>
+<!-- 현재 로그인한 사용자 정보를 JavaScript에서 사용하기 위한 hidden input -->
+<input type="hidden" id="currentUserName" value="aaa" />
+
+<div class="all-section">
+	 <div class="container">
+      <div class="head-box">
+      	<h1>
+      		<a class="ml-24" href="home.html">
+      		<img alt="logo" src="ptmaintenance/image0.png" />
+          </a>
+        </h1>
+      </div>
+        <div class="img logo-box">
+          <div class="login-box">
+            <ul class="lgoin-ulbox align-center">
+              <li class="fs-16 fc-8f">
+                <a href="javascript:void(0)" class="notification-icon" style="text-decoration: none; display: none;">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bell-icon" viewBox="0 0 24 24" width="24" height="24">
+                      <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/>
+                  </svg>
+                  
+                </a>
+              </li>
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"><a href="member.html">회원관리</a></li>
+							<li class="fs-16 fc-8f">
+							<a href="login.html">로그아웃
+							<span class="fs-16">[aaa]</span>
+							</a>
+							</li>          	  
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"></li>
+            </ul>
+          </div>
+        </div>
+    	</div>
+    	 <div class="container-low">
+        <nav class="nav-box">
+          <ul>
+          	  <li class="fs-16 menu-box fc-fff"><a href="ptmanage.html">발명승인 관리</a></li>
+	          <li class="fs-16 menu-box fc-fff"><a href="ptapplication.html">출원/등록</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="ptmaintenance.html">특허유지 관리</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="serch.html">특허 검색</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="board.html">공지사항</a></li>
+          </ul>
+        </nav>
+         <div class="new-task" onclick="location.href='writeProject.html'">+ 발명등록</div>
+    	</div>
+    </div>
+	
+	<!-- 알림 팝업 레이어 -->
+	<div id="notification_popup_layer">
+	    <div class="notification_popup_box">
+	        <div style="height: 10px; width: 100%; float: top;">
+	            <a href="javascript:void(0)" class="notification_close_btn">
+             <span class="material-symbols-outlined">close</span>
+	            </a>
+	        </div>
+	        <div class="notification_popup_cont">
+	            <h2>특허만료알림</h2>
+	            <div class="notification-content">
+	                <table class="noti-talbe">
+	                    <thead>
+	                        <tr>
+	                            <th>특허명</th>
+	                            <th>갱신일</th>
+	                            <th>남은기간</th>
+	                            <th>상태</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                    
+	                    </tbody>
+	                </table>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div>
+  <div class="main-con">
+    <div class="c-content02">
+      <div class="main-container">
+      <div class="title-box">
+      	<span class="fc-8f fs-58 fw-700 ptmaintenance-48 mb-38">특허유지 관리</span>
+      </div>
+	   <div class="search-box">
+       	<form name="ptmainFrm" action="/ptmaintenance" method="post">
+        <select name="searchType">
+          <option value="1">출원번호</option>
+          <option value="2">출원인</option>
+          <option value="3">특허명</option>
+         </select>
+         <input type="text" name="keyword" value="" />
+         <input type="submit" value="검색" onclick="searchptmaintenance()" />
+         <!-- <select name="recordSize" onchange="viewPtmain()">
+          <option value="10" th:selected="${search.recordSize == 10}">10개</option>
+          <option value="20" th:selected="${search.recordSize == 20}">20개</option>
+          <option value="50" th:selected="${search.recordSize == 50}">50개</option>
+          <option value="100" th:selected="${search.recordSize == 100}">100개</option>
+         </select> -->
+         </form>
+       	</div>
+      <table>
+      <tbody><tr>
+         <th class="width70">출원번호</th>
+         <th class="width70">특허명</th>
+         <th class="width200">출원인</th>
+         <th class="width70">특허등록날짜</th>
+         <th class="width70">특허만료날짜</th>
+         <th class="width70">특허상태</th>
+       </tr>
+       <tr>
+         <td class="width70">01-11111119</td>
+         <td class="width100"><a href="readonlyProject.html">테스트7</a></td>
+         <td class="width200">박씨</td>
+         <td class="width70"></td>
+         <td class="width70"></td>
+         
+		<td class="hitno align-center">등록포기</td>
+       </tr>
+       <tr>
+         <td class="width70">01-11111114</td>
+         <td class="width100"><a href="readonlyProject.html">테스트2</a></td>
+         <td class="width200">최씨</td>
+         <td class="width70">2025-05-09</td>
+         <td class="width70">2025-06-06</td>
+         <td class="hitno align-center">등록완료</td>
+		
+       </tr>
+       <tr>
+         <td class="width70">01-11111113</td>
+         <td class="width100"><a href="readonlyProject.html">테스트1</a></td>
+         <td class="width200">육씨</td>
+         <td class="width70">2025-05-09</td>
+         <td class="width70">2025-06-07</td>
+         <td class="hitno align-center">등록완료</td>
+		
+       </tr>
+       <tr>
+         <td class="width70">01-11111112</td>
+         <td class="width100"><a href="readonlyProject.html">전기배터리</a></td>
+         <td class="width200">이씨</td>
+         <td class="width70">2025-05-09</td>
+         <td class="width70">2025-06-07</td>
+         <td class="hitno align-center">등록완료</td>
+		
+       </tr>
+       <tr>
+         <td class="width70">01-11111111</td>
+         <td class="width100"><a href="readonlyProject.html">전기자동차</a></td>
+         <td class="width200">김씨</td>
+         <td class="width70">2025-05-09</td>
+         <td class="width70">2025-06-07</td>
+         <td class="hitno align-center">등록완료</td>
+		
+       </tr>
+      </tbody></table>
+      <div class="page-box">
+	<!-- 페이지 네비게이션 -->
+    <ul class="page">
+        <!-- 이전 페이지 링크 -->
+        
+
+        <!-- 페이지 번호 -->
+        <li class="page_item">
+            <a class="page_link_bold" href="/ptmaintenance/1?searchType=null&keyword=null&recordSize=10">1</a>
+
+            
+        </li>
+
+        <!-- 다음 페이지 링크 -->
+        
+	</ul>
+		</div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<footer>
+	      <h3>IPR SOLUTION System©</h3>
+	</footer>
+
+</body></html>

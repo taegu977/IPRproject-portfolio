@@ -1,0 +1,259 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="readProject/style0.css" />
+<link rel="stylesheet" href="readProject/style1.css" />
+<link rel="stylesheet" href="readProject/style2.css" />
+<link rel="stylesheet" href="readProject/style3.css" />
+<script src="readProject/script0.js"></script>
+<script src="readProject/script1.js"></script>
+<link rel="stylesheet" href="readProject/style4.css" />
+<link rel="stylesheet" href="readProject/style5.css" />
+<script src="readProject/script2.js"></script>
+<style>
+    .btn-change {
+      background: #e0f7fa;
+      color: #00796b;
+      border: 2px solid #00796b;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 20px;
+      transition: background 0.2s;
+     height: 42px;
+     width: 70px;
+    }
+    .btn-change:hover {
+      background: #b2ebf2;
+    }
+
+    .btn-approve {
+      background: #e8f5e9;
+      color: #388e3c;
+      border: 2px solid #388e3c;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 8px;
+      transition: background 0.2s;
+      height: 42px;
+      width: 70px;
+    }
+    .btn-approve:hover {
+      background: #c8e6c9;
+    }
+
+    .btn-reject {
+      background: #fff3e0;
+      color: #f57c00;
+      border: 2px solid #f57c00;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 8px;
+      transition: background 0.2s;
+      height: 42px;
+      width: 70px;
+    }
+    .btn-reject:hover {
+      background: #ffe0b2;
+    }
+
+    .btn-finaly {
+      background: #f0f7ff;
+      color: #1565c0;
+      border: 2px solid #1565c0;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 20px;
+      transition: background 0.2s;
+      height: 42px;
+      width: 70px;
+    }
+    .btn-finaly:hover {
+      background: #d0e6ff;
+    }
+
+    .rebtn-reapprove {
+      background: #f0f7ff;
+      color: #20873c;
+      border: 2px solid #079520;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 20px;
+      transition: background 0.2s;
+      height: 42px;
+      width: 70px;
+    }
+    .rebtn-reapprove:hover {
+      background: #d0e6ff;
+    }
+  </style>
+</head>
+<body>
+<!-- 현재 로그인한 사용자 정보를 JavaScript에서 사용하기 위한 hidden input -->
+<input type="hidden" id="currentUserName" value="aaa" />
+
+<div class="all-section">
+	 <div class="container">
+      <div class="head-box">
+      	<h1>
+      		<a class="ml-24" href="home.html">
+      		<img alt="logo" src="home/image0.png" />
+          </a>
+        </h1>
+      </div>
+        <div class="img logo-box">
+          <div class="login-box">
+            <ul class="lgoin-ulbox align-center">
+              <li class="fs-16 fc-8f">
+                <a href="javascript:void(0)" class="notification-icon" style="text-decoration: none;">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bell-icon" viewBox="0 0 24 24" width="24" height="24">
+                      <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/>
+                  </svg>
+                  <span class="notification-badge alarm-icon" data-total="4">4</span>
+                </a>
+              </li>
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"><a href="member.html">회원관리</a></li>
+							<li class="fs-16 fc-8f">
+							<a href="login.html">로그아웃
+							<span class="fs-16">[aaa]</span>
+							</a>
+							</li>          	  
+            	<li class="fs-16 fc-8f"></li>
+            	<li class="fs-16 fc-8f"></li>
+            </ul>
+          </div>
+        </div>
+    	</div>
+    	 <div class="container-low">
+        <nav class="nav-box">
+          <ul>
+          	  <li class="fs-16 menu-box fc-fff"><a href="ptmanage.html">발명승인 관리</a></li>
+          	  
+	          <li class="fs-16 menu-box fc-fff"><a href="ptapplication.html">출원/등록</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="ptmaintenance.html">특허유지 관리</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="serch.html">특허 검색</a></li>
+              <li class="fs-16 menu-box fc-fff"><a href="board.html">공지사항</a></li>
+          </ul>
+        </nav>
+         <div class="new-task" onclick="location.href='writeProject.html'">+ 발명등록</div>
+    	</div>
+    </div>
+	
+	<!-- 알림 팝업 레이어 -->
+	<div id="notification_popup_layer">
+	    <div class="notification_popup_box">
+	        <div style="height: 10px; width: 100%; float: top;">
+	            <a href="javascript:void(0)" class="notification_close_btn">
+             <span class="material-symbols-outlined">close</span>
+	            </a>
+	        </div>
+	        <div class="notification_popup_cont">
+	            <h2>특허만료알림</h2>
+	            <div class="notification-content">
+	                <table class="noti-talbe">
+	                    <thead>
+	                        <tr>
+	                            <th>특허명</th>
+	                            <th>갱신일</th>
+	                            <th>남은기간</th>
+	                            <th>상태</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                    
+	                    </tbody>
+	                </table>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div>
+  <div class="main-con">
+    <div class="l-content01">
+      <div class="pj-box">
+        <div class="pj-title">
+          <span class="fw-600">스마트워치</span>
+          <br />
+          <span class="fc-17 fs-21 fw-500">관리 번호 : A018</span>
+          <br />
+           <span class="fc-17 fs-21 fw-500">
+           출원 번호 : </span>
+          <br />
+          <span class="fc-17 fs-21 fw-500">발명자 : 발명자3</span>
+          <br />
+          <div class="btn-box mb-12">
+          <input class="mr-12 btn-change" type="button" value="변경" onclick="location.href='editPtMove.html'" />
+          
+      	<input type="button" value="수정" class="btn-editer" onclick="location.href='#'" />
+      	<input type="button" class="btn-delete" value="삭제" onclick="location.href='#'" />
+      	
+      	
+      	
+      	
+      	<input type="hidden" id="project_id" value="A018" />
+		
+		
+      	</div>
+        </div>
+        <div class="pj-body">
+          <pre class="pl-12 pr-12 rcontent-box">내용</pre>
+        </div>
+        <div class="pj-file-container">
+          <div class="pj-file-header">
+            <span class="fc-222 fs-18 fw-600">📂 첨부파일</span>
+          </div>
+          
+
+        </div>
+        <form class="pj-file-form" name="fileFrm" action="/fileAdd" method="post" enctype="multipart/form-data">
+          <div class="pj-file-upload">
+            <input class="add-file-btn" type="button" value="파일 추가  ➕" onclick="addFile(this)" />
+            <input type="hidden" name="project_id" value="A018" />
+          </div>
+          <input class="upload-btn mt-36" type="submit" value="📤  업로드" />
+        </form>
+      </div>
+    </div>
+   		 <!-- 댓글 -->
+		<div class="c-content02">
+		    <form name="replyFrm" action="/reply" method="post" class="reply-wrapper" id="replyForm" onsubmit="return false;">
+		        <div class="reply-form">
+		            <div class="form-header">
+		                <span class="reply-texthe">Commentary</span>
+		            </div>
+		            <div class="form-body">
+		                <div class="input-group">
+		                    <textarea name="comment" class="comment-input" placeholder="내용을 입력해주세요"></textarea>
+		                    <input type="hidden" name="project_id" value="A018" />
+		                    <input type="hidden" name="member_id" value="aaa" />
+		                </div>
+		                <div class="submit-group">
+		                    <input type="button" value="등록" class="submit-button" onclick="location='#'" />
+		                </div>
+		            </div>
+		        </div>
+		
+		        <div class="reply-list">
+		            <div class="reply-header">
+		            	<div class="reply-text">
+		            	 <span class="pinboard material-symbols-rounded mr-6">pinboard</span>
+		            	 <span>List</span>
+		            	</div> 
+		            </div>
+		            <div class="replies">
+		                
+		            </div>
+		        </div>
+		    </form>
+		</div>
+
+    	</div>
+    </div>
+	
+	<footer>
+	      <h3>IPR SOLUTION System©</h3>
+	</footer>
+
+</body></html>
