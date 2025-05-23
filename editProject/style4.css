@@ -1,0 +1,482 @@
+.member-inbox {
+	cursor: pointer;
+}
+
+.member-inbox:hover {
+ 	 text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.c-content02 {
+  background-color: #fff;
+  padding: 18px 28px;
+  border-radius: 10px; /* 부드러운 모서리 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  width: 80%; /* 너비를 화면 비율로 설정 */
+  max-width: 1100px; /* 최대 너비 */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.pj-box {
+  min-width: 1200px;
+  min-height: 100%;
+  border-right: 1px solid #d3d5d7;
+}
+
+
+/* ---- 프로젝트 개별 목표 섹션 꾸미기 ---- */
+.c-content02 {
+  background-color: #f9f9f9; /* 배경 색을 밝은 회색으로 설정 */
+}
+
+.pj-object {
+  font-size: 26px;
+  font-weight: 600;
+  color: #8F5C0E; /* 포인트 컬러로 텍스트 색상 변경 */
+}
+
+.do-box {
+  width: 100%;
+  background-color: #e6f0ff; /* 연한 블루 배경색 */
+  border: 2px solid #8F5C0E; /* 포인트 컬러로 테두리 색상 */
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-box {
+	display: flex;
+}
+
+.do-box input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.do-box input[type="button"] {
+  background-color: #8F5C0E; /* 포인트 컬러로 버튼 배경 색상 */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+}
+
+.do-box input[type="button"]:hover {
+  background-color: #8F5C0E; /* 버튼 호버 시 어두운 블루 색상 */
+}
+
+.todo-list table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.todo-list th, .todo-list td {
+  padding: 10px;
+  text-align: center;
+}
+
+.todo-list th {
+  background-color: #8F5C0E; /* 헤더 배경을 포인트 컬러로 설정 */
+  color: white;
+  font-weight: bold;
+}
+
+.todo-list td {
+  border-bottom: 1px solid #d3d5d7;
+}
+
+.todo-status p {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* 각 상태에 맞는 텍스트 색상 지정 */
+.status-start {
+  color: #f39c12; /* 진행 전: 오렌지 */
+}
+
+.status-progress {
+  color: #1954ff; /* 진행 중: 파란색 */
+}
+
+.status-stop {
+  color: #ff0000; /* 중단: 빨간색 */
+}
+
+.status-complete {
+  color: #2ecc71; /* 완료: 초록색 */
+}
+
+/* 버튼 스타일 */
+.todo-del, .todo-del input {
+  background-color: #e74c3c; /* 삭제 버튼 배경 색상 */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-del input:hover {
+  background-color: #c0392b; /* 삭제 버튼 호버 시 색상 */
+}
+
+
+.pj-title {
+	font-size: 42px;
+  font-weight: 600;
+  color: #8F5C0E; /* 포인트 컬러로 텍스트 색상 변경 */
+  padding: 14px;
+  text-align: center;
+}
+
+.pj-body {
+  background-color: #e6f0ff; /* 연한 블루 배경색 */
+  border: 2px solid #8F5C0E; /* 포인트 컬러로 테두리 색상 */
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  margin: 0 20px 30px;
+  min-height: 600px;
+  margin-top: 4px;
+}
+
+.pj-file {
+	border: 1px solid #d3d5d7;
+	margin: 20px 20px 30px 20px;
+}
+
+.pj-member {
+	background-color: #e6f0ff; /* 연한 블루 배경색 */
+  border: 2px solid #8F5C0E; /* 포인트 컬러로 테두리 색상 */
+	border-radius: 5px;
+	min-height: 48px;
+	margin: 0px 20px 0px 20px;
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+
+.btn-box {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 550px;
+}
+
+.btn-box input[type="button"][value="수정"] {
+  background-color: #1B68E4; /* 포인트 컬러로 버튼 배경 색상 */
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 34px;
+}
+
+.btn-box input[type="button"][value="수정"]:hover {
+  background-color: #155db6; /* 버튼 호버 시 어두운 블루 색상 */
+}
+
+.btn-box input[type="button"][value="삭제"] {
+  background-color: #ff002d; /* 포인트 컬러로 버튼 배경 색상 */
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 34px;
+}
+
+.btn-box input[type="button"][value="삭제"]:hover {
+  background-color: #d50f32; 
+}
+
+.do-btn {
+	background-color: #e6f0ff;
+	border: 1px solid #8F5C0E; /* 포인트 컬러로 테두리 색상 */
+	border-radius: 5px;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+
+.do-btn:hover {
+	background-color: #d9e6f9;
+	cursor: pointer;
+}
+
+/* 파일 업로드 */
+.pj-file-container {
+    background: #E6F0FF;
+    border: 2px solid #8F5C0E;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 20px 20px 0px 20px;
+}
+
+.pj-file-header h3 {
+    color: #1B68E4;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pj-file-list {
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.file-link {
+    color: #222;
+    font-size:16px;
+    font-weight: 500;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.remove-btn {
+	font-size: 12px;
+	border: none;
+  cursor: pointer;
+  background: none;
+  transition: text-shadow 0.3s ease;
+}
+
+.remove-btn:hover {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.file-link:hover {
+	color: #1B68E4;
+    text-decoration: underline;
+}
+
+.pj-file-form {
+	background: #E6F0FF;
+    border: 2px solid #8F5C0E;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 20px 20px 20px 20px;
+}
+
+.pj-file-upload {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-file-btn {
+    color: #222;
+    border: 1px solid #1B68E4;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s;
+}
+
+ .upload-btn {
+    color: #222;
+    border: 1px solid #1B68E4;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s;
+}
+
+.add-file-btn:hover, .upload-btn:hover {
+    background: #d1d1d1;
+}
+
+/* 댓글디자인 */
+
+/* 기본 폰트와 색감 세팅 */
+.reply-wrapper {
+    background: #fffefb;
+    border: 1px solid #e3dcd2;
+    padding: 28px 38px 28px 40px;
+    border-radius: 12px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 제목 */
+ .reply-text{
+    color: #5a3e2b;
+    font-size: 20px;
+    border-bottom: 1px solid #d5c4b1;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    width: 76px;
+}
+
+/* 제목 */
+ .reply-texthe{
+    color: #5a3e2b;
+    font-size: 20px;
+    border-bottom: 1px solid #d5c4b1;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    width: 122px;
+}
+
+/* 입력 영역 */
+.comment-input {
+    width: 94%;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid #d8cfc0;
+    border-radius: 8px;
+    font-size: 15px;
+    resize: vertical;
+    background-color: #fdfaf5;
+    color: #3e2c20;
+    transition: border 0.2s ease;
+    max-width: 560px;
+    margin-top: 18px;
+}
+
+.comment-input:focus {
+    border-color: #a58b6f;
+    outline: none;
+}
+
+/* 버튼 */
+.submit-button {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    background-color: #a9745b;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #926550;
+}
+
+/* 댓글 리스트 */
+.replies {
+    margin-top: 25px;
+}
+
+.reply {
+    background-color: #f8f3ed;
+    border: 1px solid #e0d5c5;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+
+.reply-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #6b4e39;
+}
+
+.member-id {
+    font-weight: 600;
+}
+
+.reply-date {
+    font-size: 13px;
+    color: #a18c78;
+}
+
+.reply-content {
+    font-size: 15px;
+    color: #40322a;
+    background-color: #f8f5f2;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+.reply-content pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+/* 삭제 버튼 */
+.delete-btn {
+    background: none;
+    border: 1px solid #c0a793;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: #a9745b;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e6d6c8;
+    color: #5a3e2b;
+}
+
+.replies {
+    margin-top: 22px;
+    max-height: 710px;         /* 원하는 높이로 조정 가능 */
+    overflow-y: auto;          /* 세로 스크롤 생성 */
+    padding-right: 10px;       /* 스크롤바 공간 여유 */
+}
+
+.replies::-webkit-scrollbar {
+    width: 8px;
+}
+.replies::-webkit-scrollbar-thumb {
+    background-color: #c0a793;
+    border-radius: 4px;
+}
+.replies::-webkit-scrollbar-track {
+    background-color: #f0e6de;
+    border-radius: 4px;
+}
+
+.rcontent-box {
+	white-space: pre-wrap; /* 자동 줄바꿈 */
+    word-wrap: break-word; /* 단어가 길어지면 줄바꿈 */
+}
